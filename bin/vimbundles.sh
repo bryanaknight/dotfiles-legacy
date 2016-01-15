@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
 
 BASE="$HOME/.vimbundles"
+echo "HOME"
+echo "$HOME"
 
 mkdir -p $BASE
+echo "BASE"
+echo "$BASE"
 
 default_bundles=("${HOME}/.vimbundle" "${HOME}/.vimbundle.local")
-project_bundles=($(find $WELLMATCH_DIR -name "*.vimbundle"))
+
+echo "$WELLMATCH_DIR"
 
 declare -a found_plugins=()
 declare -a unique_plugins=()
@@ -29,7 +34,7 @@ cd $HOME
 vim -c 'call pathogen#helptags()|q'
 cd $DIR
 
-merged_vimbundle_files=("${default_bundles[@]}" "${project_bundles[@]}")
+merged_vimbundle_files=("${default_bundles[@]}")
 
 for bundle in ${merged_vimbundle_files[@]}; do
   project_plugins=$(cat $bundle)
