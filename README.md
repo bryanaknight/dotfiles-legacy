@@ -1,7 +1,7 @@
 dotfiles
 ========
 
-Wellmatch Dotfiles
+Dotfiles
 
 Dotmatrix is a collection of dotfiles used at Hashrocket to customize various
 deveopment tools. This project is the culmination of many years worth of
@@ -94,14 +94,6 @@ In order for this to work, your terminal emulator needs to use a font with the r
 In case you're using iTerm2:  to configure, go to `Preferences` -> `Profiles` -> `Text`, and set both the `Regular Font` and `Non-ASCII Font` settings to the one you just installed.  You may have to tweak the font size, particularly for the `Non-ASCII Font` setting, to get the chevrons to line up.  Using the [Hack][hack-font] font, you will likely need to set `Non-ASCII Font` size to be 1pt smaller than the `Regular Font` size.
 
   [hack-font]: https://github.com/powerline/fonts/raw/master/Hack/Hack-Regular.ttf "Hack Regular"
-
-Actively Maintained
--------------------
-
-At WellMatch we use dotmatrix on all of our development machines, then for
-many of us we get so used to the setup that we use it on our personal machines
-too. That means there's a lot of picky nerds using dotmatrix every day to make
-their tools easy and fun to use.
 
 Update
 ------
