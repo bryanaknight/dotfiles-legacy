@@ -151,14 +151,13 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
 
 " ctrlp.vim config
-if get(g:, 'loaded_ctrlp', 1)
-  let g:ctrlp_match_window_reversed = 0
-  let g:ctrlp_working_path_mode = 'a'
-  let g:ctrlp_max_height = 20
-  let g:ctrlp_match_window_bottom = 0
-  let g:ctrlp_switch_buffer = 0
-  let g:ctrlp_custom_ignore = '\v.DS_Store|.sass-cache|.scssc|tmp|.bundle|.git|node_modules|vendor|bower_components$'
-endif
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=30
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:30,results:30'
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\v[\/](node_modules|tags|vendor|public|tmp|git-bin|enterprise|bin)',
+  \ 'file': '\vtags',
+  \ }
 
 command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
 function! QuickfixFilenames()
