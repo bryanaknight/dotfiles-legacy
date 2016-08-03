@@ -9,6 +9,7 @@ export HISTSIZE=10000
 # Don't store duplicates
 export HISTCONTROL=erasedups
 # Append to history file
+export PATH=bin:$PATH
 shopt -s histappend
 
 VISUAL=vim
@@ -40,6 +41,3 @@ if [ -f '/usr/local/etc/bash_completion.d/git-completion.bash' ]; then
 fi
 
 source ~/dotfiles/bin/tmuxinator.bash
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[ ! -f "$HOME/.bashrc.local" ] || . "$HOME/.bashrc.local"
