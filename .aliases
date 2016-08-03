@@ -38,6 +38,8 @@ alias grc='git rebase --continue'
 alias gri='git rebase --interactive'
 alias gra='git rebase --abort'
 alias reset-authors='git commit --amend --reset-author -C HEAD'
+alias gcb='git copy-branch-name'
+alias gpu='git push -u origin `gcb`'
 
 # Infrastructure
 alias ap='ansible-playbook'
