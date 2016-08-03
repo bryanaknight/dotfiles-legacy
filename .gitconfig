@@ -56,5 +56,9 @@
 [rebase]
 	autosquash = true
 [user]
-        name = bryanaknight
-        email = brknig11@gmail.com
+	name = Bryana Knight
+	email = bryanaknight@github.com
+[github]
+	user = bryanaknight
+[credential]
+	helper = osxkeychain
