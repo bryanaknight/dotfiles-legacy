@@ -65,4 +65,3 @@ alias ets='ember test --server'
 
 # Service Shortcuts
 SRC_PATH="$HOME/src"
-PLATFORM_PATH="$SRC_PATH/wellmatch_platform"
