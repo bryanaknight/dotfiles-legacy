@@ -1,6 +1,8 @@
 runtime! autoload/pathogen.vim
 
+set nocompatible
 syntax on
+filetype on
 filetype plugin indent on
 
 set visualbell
