@@ -6,3 +6,7 @@ parse_git_branch() {
 }
 export PS1="\W\[\033[0;33m\]\$(parse_git_branch)💃 \[\033[0;39m\] "
 export PATH="$HOME/.rbenv/bin:$PATH"
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+eval "$(rbenv init -)"
