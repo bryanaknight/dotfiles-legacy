@@ -54,3 +54,4 @@ mustache/vim-mustache-handlebars
 elixir-lang/vim-elixir
 ekalinin/Dockerfile.vim
 fatih/vim-go
+nsf/gocode

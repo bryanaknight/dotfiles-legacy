@@ -178,6 +178,9 @@ set nowritebackup
 " Disable swapfile
 set noswapfile
 
+" vim gocode
+filetype plugin on
+
 " airline
 let g:airline_powerline_fonts=1
 if !exists('g:airline_symbols')
